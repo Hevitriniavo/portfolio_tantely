@@ -1,5 +1,7 @@
 import Header from "@/components/headers/header";
-import About from "@/components/About";
+import About from "@/components/about";
+import Skill from "@/components/skill";
+import Project from "@/components/project";
 
 export default function Home() {
     return (
@@ -7,6 +9,8 @@ export default function Home() {
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Header />
                 <About />
+                <Skill />
+                <Project />
             </div>
         </main>
     );
