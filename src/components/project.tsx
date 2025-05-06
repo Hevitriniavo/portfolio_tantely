@@ -78,7 +78,7 @@ export default function ProjectCarousel() {
                     },
                 },
             }
-            : undefined
+            : {}
     );
 
     useEffect(() => {
@@ -93,8 +93,7 @@ export default function ProjectCarousel() {
     const renderProjectCard = (project: ProjectItem, index: number) => (
         <div
             key={index}
-            className=" p-2 rounded-2xl  shadow-md"
-
+            className="p-2 rounded-2xl shadow-md"
         >
             {project.image ? (
                 <Image
@@ -106,7 +105,7 @@ export default function ProjectCarousel() {
                 />
             ) : (
                 <div className="w-full h-48 bg-gray-100 flex items-center justify-center text-gray-500">
-                    Pas d'image
+                    Pas d&apos;image
                 </div>
             )}
             <div className="mt-4 flex flex-col justify-between h-full">
@@ -120,8 +119,8 @@ export default function ProjectCarousel() {
                             key={i}
                             className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full"
                         >
-              {lang}
-            </span>
+                            {lang}
+                        </span>
                     ))}
                 </div>
                 <div className="flex flex-col gap-2 text-sm mt-auto">
