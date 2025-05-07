@@ -1,60 +1,14 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image  from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
-import project1 from "@/assets/projects/project1.jpeg";
-import project2 from "@/assets/projects/project2.jpg";
-import project3 from "@/assets/projects/project3.jpeg";
+import { projects} from "@/data";
+import type {ProjectItem} from "@/types";
 
-type ProjectItem = {
-    title: string;
-    image?: StaticImageData;
-    description: string;
-    language: string[];
-    depo: string[];
-    urlDeployed: string;
-};
 
 export default function ProjectCarousel() {
-    const projects: ProjectItem[] = [
-        {
-            title: "Portfolio Personnel",
-            image: project1,
-            description: "Un site personnel pour présenter mes compétences et projets.",
-            language: ["React", "Next.js", "Tailwind CSS"],
-            depo: [
-                "https://github.com/username/portfolio",
-                "https://github.com/username/portfolio-api"
-            ],
-            urlDeployed: "https://portfolio.example.com",
-        },
-        {
-            title: "Gestion de Banque",
-            image: project2,
-            description: "Application de gestion de comptes bancaires avec Spring Boot.",
-            language: ["Java", "Spring Boot", "MySQL"],
-            depo: ["https://github.com/username/systembank"],
-            urlDeployed: "",
-        },
-        {
-            title: "Blog Personnel",
-            image: project3,
-            description: "Un blog personnel pour partager mes idées et tutoriels.",
-            language: ["React", "Next.js", "Tailwind CSS"],
-            depo: ["https://github.com/username/blog"],
-            urlDeployed: "https://blog.example.com",
-        },
-        {
-            title: "App de Recettes",
-            image: project3,
-            description: "Une application de gestion de recettes de cuisine.",
-            language: ["React", "TypeScript", "Firebase"],
-            depo: ["https://github.com/username/recettes"],
-            urlDeployed: "https://recettes.example.com",
-        },
-    ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
@@ -88,7 +42,7 @@ export default function ProjectCarousel() {
             }, 5000);
             return () => clearInterval(interval);
         }
-    }, [instanceRef, projects.length]);
+    }, [instanceRef]);
 
     const renderProjectCard = (project: ProjectItem, index: number) => (
         <div
@@ -153,9 +107,9 @@ export default function ProjectCarousel() {
     );
 
     return (
-        <div className="mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div id="projets" className="mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-7xl">
             <h2 className="text-4xl font-bold text-center mb-10">Mes Projets</h2>
-
+            <p className="max-w-3xl mx-auto text-center text-base text-gray-600 dark:text-gray-400 mb-2">Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore :</p>
             {projects.length >= 4 ? (
                 <>
                     <div ref={sliderRef} className="keen-slider">

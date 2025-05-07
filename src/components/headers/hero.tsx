@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Hero() {
     return (
-        <section className="flex flex-col md:flex-row items-center justify-between gap-10 px-6 pt-28 md:pt-48 pb-12">
+        <section id="accueil" className="flex flex-col md:flex-row items-center mt-16 justify-between gap-10 px-6 pt-28 md:pt-48 pb-12">
             <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
                 <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 dark:text-white font-geist-sans leading-tight">
                     Hevitriniavo
@@ -35,12 +35,15 @@ export default function Hero() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-                    <button className="bg-blue-300 hover:cursor-pointer hover:bg-blue-400 text-black font-semibold px-6 py-2 rounded shadow">
+                    <a
+                        href="/assets/cv.pdf"
+                        download="cv_tantely.pdf"
+                        className="bg-blue-300 hover:cursor-pointer hover:bg-blue-400 text-black font-semibold px-6 py-2 rounded shadow">
                         Télécharger CV
-                    </button>
-                    <button className="bg-gray-600  hover:cursor-pointer hover:bg-gray-800 text-white px-6 py-2 rounded shadow">
+                    </a>
+                    <a href="#contact" className="bg-gray-600  hover:cursor-pointer hover:bg-gray-800 text-white px-6 py-2 rounded shadow">
                         Contactez-moi
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">

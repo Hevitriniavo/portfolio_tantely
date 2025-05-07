@@ -3,7 +3,7 @@ import Hero from "./hero"
 
 export default function Header() {
     return (
-        <header>
+        <header className="relative">
             <Navbar />
             <Hero />
         </header>

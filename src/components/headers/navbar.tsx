@@ -24,10 +24,12 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="w-full border-b border-blue-300 px-4 py-3 bg-white dark:bg-black sticky top-0 z-50">
+        <nav className="w-full border-b border-blue-300 px-4 py-3 bg-white dark:bg-[#121212]  fixed top-0 right-0 left-0 z-50">
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl text-center font-bold italic text-gray-900 dark:text-white">
-                    Tantely<span className="text-blue-400">Dev</span>
+                   <a href="#accueil">
+                       Tantely<span className="text-blue-400">Dev</span>
+                   </a>
                 </h1>
 
                 <ul className="hidden md:flex space-x-6 items-center">
