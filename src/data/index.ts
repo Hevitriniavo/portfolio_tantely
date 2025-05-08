@@ -1,4 +1,7 @@
 import portfolio from "@/assets/projects/portfolio.png";
+import nyAnyAminay from "@/assets/projects/ny_any_aminay.png";
+import kikiAI from "@/assets/projects/kiki_ai.png";
+import cleanCIty from "@/assets/projects/clean_city.png";
 import js from "@/assets/skills/js.png";
 import ts from "@/assets/skills/ts.png";
 import vue from "@/assets/skills/vue.png";
@@ -80,31 +83,41 @@ export const projects: ProjectItem[] = [
     {
         title: "Portfolio Personnel",
         image: portfolio,
-        description: "Un site personnel pour présenter mes compétences et projets.",
-        language: ["Next.js", "Tailwind CSS"],
+        description: "L'application Portfolio Personnel est une plateforme web moderne que j'ai développée pour présenter mon parcours professionnel, mes compétences techniques, ainsi que les projets sur lesquels j’ai travaillé. Elle reflète ma passion pour le développement web et mon souci du détail dans la conception d’interfaces élégantes et fonctionnelles.",
+        language: ["Next.js", "Tailwind CSS", "Typescript"],
         depo: [
-            "https://github.com/username/portfolio"
+            "https://github.com/Hevitriniavo/portfolio_tantely"
         ],
-        urlDeployed: "https://portfolio.example.com",
+        urlDeployed: "https://portfolio-tantely.vercel.app",
     },
     {
-        title: "Kids app",
-        image: portfolio,
-        description: "Un site personnel pour présenter mes compétences et projets.",
-        language: ["Next.js", "Tailwind CSS", "typescript"],
+        title: "Clean City",
+        image: cleanCIty,
+        description: "Clean City est une application de gestion intelligente des déchets, conçue pour améliorer le ramassage, le suivi et l’organisation des poubelles dans une ville.",
+        language: ["Symfony", "Tailwind CSS", "Javascript", "Twig"],
         depo: [
-            "https://github.com/username/portfolio"
+            "https://github.com/Hevitriniavo/waste-management-web"
         ],
-        urlDeployed: "https://portfolio.example.com",
+        urlDeployed: "",
     },
     {
-        title: "Ny any aminay",
-        image: portfolio,
-        description: "Un site personnel pour présenter mes compétences et projets.",
-        language: ["html", "css", "javascript"],
+        title: "Ny Any Aminay",
+        image: nyAnyAminay,
+        description: "un site Web qui met en valeur la beauté de nos lieux ruraux, tels que la culture, le style de vie et la communauté.",
+        language: ["Html", "Css", "Javascript"],
         depo: [
-            "https://github.com/username/portfolio"
+            "https://github.com/Hevitriniavo/ny-any-ambala"
         ],
-        urlDeployed: "https://portfolio.example.com",
+        urlDeployed: "https://ny-any-ambala.vercel.app",
+    },
+    {
+        title: "Kiki AI !",
+        image: kikiAI,
+        description: "KIKI AI est une application éducative intelligente conçue pour les enfants et les jeunes curieux. Grâce à l’intelligence artificielle, KIKI AI transforme l’apprentissage en une expérience ludique, interactive et personnalisée.",
+        language: ["Reactjs", "Shadcn UI", "Material UI", "Typescript"],
+        depo: [
+            "https://github.com/Hevitriniavo/kids-app"
+        ],
+        urlDeployed: "https://kids-app-gamma.vercel.app",
     }
 ];
