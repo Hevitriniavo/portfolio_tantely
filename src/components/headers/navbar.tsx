@@ -8,28 +8,51 @@ export default function Navbar() {
     const [hash, setHash] = useState<string | null>(null);
     const [isOpen, setIsOpen] = useState(false);
 
-    const liens = [
+    const [liens] = useState([
         { label: "Accueil", id: "accueil" },
-        { label: "Projets", id: "projets" },
-        { label: "Compétences", id: "competences" },
         { label: "À propos", id: "a-propos" },
+        { label: "Compétences", id: "skills" },
+        { label: "Projets", id: "projets" },
         { label: "Contact", id: "contact" },
-    ];
+    ]);
 
     useEffect(() => {
-        const handleHashChange = () => setHash(window.location.hash);
-        handleHashChange();
-        window.addEventListener("hashchange", handleHashChange);
-        return () => window.removeEventListener("hashchange", handleHashChange);
-    }, []);
+        const updateHash = (id: string) => {
+            console.log("ID", id)
+            setHash(`#${id}`);
+            window.history.replaceState(null, "", `#${id}`);
+        };
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        updateHash(id);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        liens.forEach((lien) => {
+            const element = document.getElementById(lien.id);
+            if (element) {
+                observer.observe(element);
+            }
+        });
+        return () => {
+            observer.disconnect();
+        };
+    }, [liens]);
 
     return (
-        <nav className="w-full border-b border-blue-300 px-4 py-3 bg-white dark:bg-[#121212]  fixed top-0 right-0 left-0 z-50">
+        <nav className="w-full border-b border-blue-300 px-4 py-3 bg-white dark:bg-[#121212] fixed top-0 right-0 left-0 z-50">
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl text-center font-bold italic text-gray-900 dark:text-white">
-                   <a href="#accueil">
-                       Tantely<span className="text-blue-400">Dev</span>
-                   </a>
+                    <a href="#accueil">
+                        Tantely<span className="text-blue-400">Dev</span>
+                    </a>
                 </h1>
 
                 <ul className="hidden md:flex space-x-6 items-center">

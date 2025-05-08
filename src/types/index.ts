@@ -1,5 +1,22 @@
-import {StaticImageData} from "next/image";
+import { StaticImageData } from "next/image";
 
+export type SkillItem  ={
+    label: string;
+    level: number;
+    image?: StaticImageData;
+}
+
+export type Row  = {
+    domain: string | null;
+    domainRowSpan: number;
+    category: string | null;
+    categoryRowSpan: number;
+    label: string;
+    level: number;
+    image ?: StaticImageData;
+}
+
+export type SkillsKey = "frontend" | "backend" | "database" | "others" ;
 
 export type ProjectItem = {
     title: string;
@@ -8,27 +25,4 @@ export type ProjectItem = {
     language: string[];
     depo: string[];
     urlDeployed: string;
-};
-
-
-export type SkillItem = {
-    label: string;
-    level: number;
-    image?: StaticImageData;
-};
-
-export type SkillGroup = {
-    [subcategory: string]: SkillItem[];
-};
-
-export type SkillTree = {
-    informatiques: {
-        frontend: SkillGroup;
-        backend: SkillGroup;
-        "base de donnée": SkillGroup;
-        autre: SkillGroup;
-    };
-    linguistiques: {
-        [lang: string]: SkillItem;
-    };
-};
+}

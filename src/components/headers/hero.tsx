@@ -35,14 +35,14 @@ export default function Hero() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-                    <a
-                        href="/assets/cv.pdf"
-                        download="cv_tantely.pdf"
-                        className="bg-blue-300 hover:cursor-pointer hover:bg-blue-400 text-black font-semibold px-6 py-2 rounded shadow">
-                        Télécharger CV
-                    </a>
                     <a href="#contact" className="bg-gray-600  hover:cursor-pointer hover:bg-gray-800 text-white px-6 py-2 rounded shadow">
                         Contactez-moi
+                    </a>
+                    <a
+                        href="/assets/tantely-cv.pdf"
+                        target="_blank"
+                        className="bg-blue-300 hover:cursor-pointer hover:bg-blue-400 text-black font-semibold px-6 py-2 rounded shadow">
+                        Voir le CV
                     </a>
                 </div>
             </div>

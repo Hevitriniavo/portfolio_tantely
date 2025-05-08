@@ -4,7 +4,7 @@ import web from "@/assets/web.jpeg";
 
 export default function About() {
     return (
-        <div id="a-propos">
+        <section id="a-propos">
             <h2 className="text-3xl font-bold pt-14 text-center mb-6">
                 À propos de moi
             </h2>
@@ -14,7 +14,7 @@ export default function About() {
                 d’autant plus en étant impliqué, curieux et passionné.
             </p>
 
-            <section className="flex items-center justify-center px-4 py-12">
+            <section className="flex items-center justify-center px-4">
                 <div className="rounded-2xl overflow-hidden w-full flex flex-col-reverse md:flex-row">
                     <div className="md:w-1/3 flex justify-center items-center p-6">
                         <Image
@@ -24,9 +24,9 @@ export default function About() {
                         />
                     </div>
 
-                    <div className="md:w-2/3 p-6 space-y-4 text-sm text-gray-700 dark:text-gray-300">
-                        <p className="max-w-3xl mx-auto text-base text-gray-600 dark:text-gray-400 mb-2">
-                            👋 Bonjour, je m&apos;appelle <span className="font-semibold text-blue-600 dark:text-blue-400">Hevitriniavo</span>.
+                    <div className="md:w-2/3 p-6 space-y-4 ">
+                        <p className="max-w-3xl mx-auto  text-gray-600 dark:text-gray-400 mb-2">
+                            👋 Bonjour, je m&apos;appelle Hevitriniavo.
                             Je suis un développeur fullstack passionné par le développement web moderne, tant côté frontend que backend.
                             Actuellement en licence d’Écosystème Logiciel à la{" "}
                             <a
@@ -39,10 +39,8 @@ export default function About() {
                             </a>, je suis à la recherche d&apos;un stage ou d&apos;une alternance pour mettre en pratique mes compétences en Java, JavaScript, TypeScript, PHP, ainsi que dans des frameworks comme React, Vue, Next, Nuxt, Symfony et Spring Boot.
                         </p>
 
-                        <p className="max-w-3xl mx-auto  text-base text-gray-600 dark:text-gray-400 mb-2">
-                            Je maîtrise également des outils tels que Git, Docker, Postman, et je m&apos;intéresse aux bonnes pratiques comme{" "}
-                            <span className="italic">les tests, CI/CD, et la sécurité</span>.
-                            J&apos;ai déjà développé une application complète pour un restaurant, gérant les menus, les commandes, les réservations et les factures.
+                        <p className="max-w-3xl mx-auto  text-gray-600 dark:text-gray-400 mb-2">
+                            Je connais bien des outils tels que Git, Postman, et je m&apos;intéresse aux bonnes pratiques comme les tests et la sécurité.
                         </p>
 
                         <p className="max-w-3xl mx-auto text-base text-gray-600 dark:text-gray-400 mb-2">
@@ -51,6 +49,6 @@ export default function About() {
                     </div>
                 </div>
             </section>
-        </div>
+        </section>
     );
 }

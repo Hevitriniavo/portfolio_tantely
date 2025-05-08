@@ -7,6 +7,7 @@ import Image from "next/image";
 import webContact from "@/assets/devWeb.jpg";
 import React from "react";
 import {toast} from "react-toastify";
+import Footer from "@/components/footer";
 
 const contactSchema = z.object({
     name: z.string().min(1, "Le nom est requis"),
@@ -44,7 +45,7 @@ export default function Contact() {
     };
 
     return (
-        <div id="contact">
+        <section id="contact">
             <h2 className="text-3xl font-bold pt-14 text-center mb-6">
                 Contactez-moi
             </h2>
@@ -122,7 +123,8 @@ export default function Contact() {
                     </form>
                 </div>
             </div>
-        </div>
+            <Footer />
+        </section>
 
     );
 }
