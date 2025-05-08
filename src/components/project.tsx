@@ -61,9 +61,7 @@ export default function ProjectCarousel() {
                 <Image
                     src={project.image}
                     alt={project.title}
-                    width={400}
-                    height={200}
-                    className="w-full h-[200px] object-cover"
+                    className="w-[400px] h-[200px] object-cover"
                 />
             ) : (
                 <div className="w-full h-48 bg-gray-100 flex items-center justify-center text-gray-500">
@@ -129,7 +127,7 @@ export default function ProjectCarousel() {
                                 className="rounded mb-4 h-[300px] w-[600px] object-cover max-h-80"
                             />
                         )}
-                        <p className="text-gray-700 mb-4">{selectedProject.description}</p>
+                        <p className="text-gray-700 mb-4 text-sm">{selectedProject.description}</p>
                         <div className="flex flex-wrap gap-2 mb-4">
                             {selectedProject.language.map((lang, i) => (
                                 <span
