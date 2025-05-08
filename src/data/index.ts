@@ -83,7 +83,7 @@ export const projects: ProjectItem[] = [
     {
         title: "Portfolio Personnel",
         image: portfolio,
-        description: "L'application Portfolio Personnel est une plateforme web moderne que j'ai développée pour présenter mon parcours professionnel, mes compétences techniques, ainsi que les projets sur lesquels j’ai travaillé. Elle reflète ma passion pour le développement web et mon souci du détail dans la conception d’interfaces élégantes et fonctionnelles.",
+        description: "L’application Portfolio Personnel est un site web moderne que j’ai conçu pour présenter mon parcours, mes compétences et mes projets, en mettant en avant ma passion pour le développement web et le design soigné.",
         language: ["Next.js", "Tailwind CSS", "Typescript"],
         depo: [
             "https://github.com/Hevitriniavo/portfolio_tantely"
