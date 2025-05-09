@@ -1,5 +1,7 @@
 import portfolio from "@/assets/projects/portfolio.png";
 import nyAnyAminay from "@/assets/projects/ny_any_aminay.png";
+import schoolManagement from "@/assets/projects/school_management.png";
+import sooatel from "@/assets/projects/school_management.png";
 import kikiAI from "@/assets/projects/kiki_ai.png";
 import cleanCIty from "@/assets/projects/clean_city.png";
 import js from "@/assets/skills/js.png";
@@ -106,7 +108,8 @@ export const projects: ProjectItem[] = [
         description: "un site Web qui met en valeur la beauté de nos lieux ruraux, tels que la culture, le style de vie et la communauté.",
         language: ["Html", "Css", "Javascript"],
         depo: [
-            "https://github.com/Hevitriniavo/ny-any-ambala"
+            "https://github.com/H" +
+            "evitriniavo/ny-any-ambala"
         ],
         urlDeployed: "https://ny-any-ambala.vercel.app",
     },
@@ -119,5 +122,27 @@ export const projects: ProjectItem[] = [
             "https://github.com/Hevitriniavo/kids-app"
         ],
         urlDeployed: "https://kids-app-gamma.vercel.app",
+    },
+    {
+        title: "School Management",
+        image: schoolManagement,
+        description: "Faciliter la gestion administrative et financière des établissements scolaires en automatisant le suivi des écolages, des paiements des élèves, et la génération des factures et reçus.",
+        language: ["Reactjs", "Tailwind css", "Spring boot"],
+        depo: [
+            "https://github.com/Hevitriniavo/school-management-web",
+            "https://github.com/Hevitriniavo/sxv-api"
+        ],
+        urlDeployed: "",
+    },
+    {
+        title: "Sooatel",
+        image: sooatel,
+        description: "Développement d’une application web de gestion : menus, commandes, réservations, facturation, base de données client/ventes, sécurisation et optimisation.",
+        language: ["Reactjs", "Tailwind css", "Spring boot"],
+        depo: [
+            "https://github.com/Hevitriniavo/sooatel-api",
+            "https://github.com/Hevitriniavo/sooatel-ui"
+        ],
+        urlDeployed: "",
     }
 ];
