@@ -51,8 +51,8 @@ export default function Skill() {
     const rows = [
         ...renderRow("Frontend", "frontend"),
         ...renderRow("Backend", "backend"),
-        ...renderRow("Database", "database"),
-        ...renderRow("Others", "others"),
+        ...renderRow("Bases des données", "database"),
+        ...renderRow("Autres", "others"),
     ];
 
     return (

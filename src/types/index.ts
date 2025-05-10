@@ -23,6 +23,6 @@ export type ProjectItem = {
     image?: StaticImageData;
     description: string;
     language: string[];
-    depo: string[];
+    depo: { label: string; value: string }[];
     urlDeployed: string;
 }

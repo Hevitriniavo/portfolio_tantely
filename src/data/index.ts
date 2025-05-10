@@ -1,7 +1,7 @@
 import portfolio from "@/assets/projects/portfolio.png";
 import nyAnyAminay from "@/assets/projects/ny_any_aminay.png";
 import schoolManagement from "@/assets/projects/school_management.png";
-import sooatel from "@/assets/projects/school_management.png";
+import sooatel from "@/assets/projects/sooatel.png";
 import kikiAI from "@/assets/projects/kiki_ai.png";
 import cleanCIty from "@/assets/projects/clean_city.png";
 import js from "@/assets/skills/js.png";
@@ -75,7 +75,7 @@ export const others = {
 export const linguistics = {
     languages: [
         { label: "Malagasy", level: 100 },
-        { label: "Français", level: 60 },
+        { label: "Français", level: 55 },
         { label: "Anglais", level: 50 },
     ],
 };
@@ -88,7 +88,7 @@ export const projects: ProjectItem[] = [
         description: "L’application Portfolio Personnel est un site web moderne que j’ai conçu pour présenter mon parcours, mes compétences et mes projets, en mettant en avant ma passion pour le développement web et le design soigné.",
         language: ["Next.js", "Tailwind CSS", "Typescript"],
         depo: [
-            "https://github.com/Hevitriniavo/portfolio_tantely"
+            { label: "Frontend", value: "https://github.com/Hevitriniavo/portfolio_tantely" }
         ],
         urlDeployed: "https://portfolio-tantely.vercel.app",
     },
@@ -98,7 +98,7 @@ export const projects: ProjectItem[] = [
         description: "Clean City est une application de gestion intelligente des déchets, conçue pour améliorer le ramassage, le suivi et l’organisation des poubelles dans une ville.",
         language: ["Symfony", "Tailwind CSS", "Javascript", "Twig"],
         depo: [
-            "https://github.com/Hevitriniavo/waste-management-web"
+            { label: "Fullstack", value: "https://github.com/Hevitriniavo/waste-management-web" }
         ],
         urlDeployed: "",
     },
@@ -108,8 +108,7 @@ export const projects: ProjectItem[] = [
         description: "un site Web qui met en valeur la beauté de nos lieux ruraux, tels que la culture, le style de vie et la communauté.",
         language: ["Html", "Css", "Javascript"],
         depo: [
-            "https://github.com/H" +
-            "evitriniavo/ny-any-ambala"
+            { label: "Frontend", value: "https://github.com/Hevitriniavo/ny-any-ambala" }
         ],
         urlDeployed: "https://ny-any-ambala.vercel.app",
     },
@@ -119,7 +118,7 @@ export const projects: ProjectItem[] = [
         description: "KIKI AI est une application éducative intelligente conçue pour les enfants et les jeunes curieux. Grâce à l’intelligence artificielle, KIKI AI transforme l’apprentissage en une expérience ludique, interactive et personnalisée.",
         language: ["Reactjs", "Shadcn UI", "Material UI", "Typescript"],
         depo: [
-            "https://github.com/Hevitriniavo/kids-app"
+            { label: "Frontend", value: "https://github.com/Hevitriniavo/kids-app" }
         ],
         urlDeployed: "https://kids-app-gamma.vercel.app",
     },
@@ -129,8 +128,8 @@ export const projects: ProjectItem[] = [
         description: "Faciliter la gestion administrative et financière des établissements scolaires en automatisant le suivi des écolages, des paiements des élèves, et la génération des factures et reçus.",
         language: ["Reactjs", "Tailwind css", "Spring boot"],
         depo: [
-            "https://github.com/Hevitriniavo/school-management-web",
-            "https://github.com/Hevitriniavo/sxv-api"
+            { label: "Frontend", value: "https://github.com/Hevitriniavo/school-management-web" },
+            { label: "Backend", value: "https://github.com/Hevitriniavo/sxv-api" }
         ],
         urlDeployed: "",
     },
@@ -140,8 +139,8 @@ export const projects: ProjectItem[] = [
         description: "Développement d’une application web de gestion : menus, commandes, réservations, facturation, base de données client/ventes, sécurisation et optimisation.",
         language: ["Reactjs", "Tailwind css", "Spring boot"],
         depo: [
-            "https://github.com/Hevitriniavo/sooatel-api",
-            "https://github.com/Hevitriniavo/sooatel-ui"
+            { label: "Backend", value: "https://github.com/Hevitriniavo/sooatel-api" },
+            { label: "Frontend", value: "https://github.com/Hevitriniavo/sooatel-ui" }
         ],
         urlDeployed: "",
     }

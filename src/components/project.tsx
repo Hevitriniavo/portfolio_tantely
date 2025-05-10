@@ -139,16 +139,25 @@ export default function ProjectCarousel() {
                             ))}
                         </div>
                         <div className="flex flex-col gap-2 text-sm">
-                            <div className="flex flex-row gap-2">
+                            <div className="flex flex-wrap gap-2 items-center">
                                 {selectedProject.depo.map((repoUrl, i) => (
                                     <a
                                         key={i}
-                                        href={repoUrl}
+                                        href={repoUrl.value}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-blue-600 hover:underline"
+                                        className="flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500 text-blue-600 text-sm hover:bg-blue-50 dark:hover:bg-blue-900 transition"
                                     >
-                                        Code Source {selectedProject.depo.length > 1 ? `#${i + 1}` : ""}
+                                        <svg
+                                            className="w-4 h-4"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M16 18l6-6m0 0l-6-6m6 6H8"></path>
+                                        </svg>
+                                        {'Code Source: ' + repoUrl.label || `Code Source ${selectedProject.depo.length > 1 ? `#${i + 1}` : ""}`}
                                     </a>
                                 ))}
                             </div>
