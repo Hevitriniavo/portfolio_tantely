@@ -12,7 +12,7 @@ export default function Hero() {
                     Hevitriniavo
                     <br />
                     <span className="text-blue-400 lowercase">
-                        Andrianstilavoandalana Tantely
+                        Andriatsilavoandalana Tantely
                     </span>
                 </h1>
                 <hr className="border-t-2 border-blue-300 w-24 mx-auto md:mx-0" />
